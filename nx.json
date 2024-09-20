@@ -2,13 +2,8 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
     "build": {
-      "dependsOn": [
-        "^build",
-        "typecheck"
-      ],
-      "outputs": [
-        "{projectRoot}/dist"
-      ],
+      "dependsOn": ["^build", "typecheck"],
+      "outputs": ["{projectRoot}/dist"],
       "cache": true
     },
     "typecheck": {
@@ -38,5 +33,9 @@
       }
     }
   ],
-  "nxCloudAccessToken": "ODdjOWQ2YjYtYmM5YS00NjJhLWJhNjItNTQyOWI4YTkyMThjfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "ODdjOWQ2YjYtYmM5YS00NjJhLWJhNjItNTQyOWI4YTkyMThjfHJlYWQtd3JpdGU=",
+  "namedInputs": {
+    "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"],
+    "default": ["sharedGlobals"]
+  }
 }
