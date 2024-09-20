@@ -37,5 +37,6 @@
         "targetName": "eslint:lint"
       }
     }
-  ]
+  ],
+  "nxCloudAccessToken": "ODdjOWQ2YjYtYmM5YS00NjJhLWJhNjItNTQyOWI4YTkyMThjfHJlYWQtd3JpdGU="
 }
